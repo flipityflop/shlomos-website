@@ -1,0 +1,111 @@
+{
+  "hero": {
+    "title": "Hi, my name is Shlomo Friedman",
+    "subtitle": "I built this site to show you what I can do.",
+    "buttons": [
+      {
+        "text": "View Projects",
+        "link": "/development"
+      },
+      {
+        "text": "Explore Capabilities", 
+        "link": "#capabilities"
+      }
+    ]
+  },
+  "intro": {
+    "heading": "In One Word: I Love Building Products",
+    "description": "Specifically, technical products with unique and creative solutions. Maybe something that involves some kind of crazy cloud config, or a custom Python workflow for DevOps data processing.",
+    "insight": "It's really about the magic of development and technical creativity combined with building excellent products to help my team out. Also did I mention DevOps? I love it."
+  },
+  "experience": {
+    "heading": "My Experience",
+    "description": "In my career, I worked on TV shows (real ones for HBO and FX), plugged in printers and servers, and built, from 0 to 100, a whole host of technical products:",
+    "items": [
+      {
+        "tag": "OEM",
+        "description": "Smart home apps"
+      },
+      {
+        "tag": "INTERNAL", 
+        "description": "Admin portal pages"
+      },
+      {
+        "tag": "ANALYTICS",
+        "description": "Sales dashboards"
+      }
+    ],
+    "insight": "Also, I took a development team with no data and gave it data: lead time, task types, etc., and the magic of automation."
+  },
+  "capabilities": {
+    "heading": "Core Capabilities",
+    "items": [
+      {
+        "icon": "{ }",
+        "title": "Code Writing",
+        "description": "Python and JavaScript",
+        "skillLevel": "90% efficiency",
+        "progressWidth": "90%",
+        "techTags": ["Python", "JavaScript", "Node.js"]
+      },
+      {
+        "icon": "⚡",
+        "title": "Project Management", 
+        "description": "Building project plans, communicating with people who don't want to communicate, and getting things done.",
+        "skillLevel": "95% delivery rate",
+        "progressWidth": "95%",
+        "metrics": [
+          {
+            "value": "100%",
+            "label": "On-time delivery"
+          },
+          {
+            "value": "0",
+            "label": "Burnout casualties"
+          }
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "title": "DevOps",
+        "description": "Workflow, code automation, fast feedback, integrated learning.",
+        "skillLevel": "88% automation coverage",
+        "progressWidth": "88%",
+        "techTags": ["CI/CD", "Docker", "Python"]
+      },
+      {
+        "icon": "🖥️",
+        "title": "IT Operations",
+        "description": "Managing a helpdesk, standing up a NAS, setting up computers, SIP trunking and DID routing, and buying wireless mice from B&H.",
+        "skillLevel": "96% uptime achievement", 
+        "progressWidth": "96%",
+        "techTags": ["TrueNAS", "SIP", "B&H"]
+      },
+      {
+        "icon": "🎬",
+        "title": "VFX",
+        "description": "I can make someone look like they got shot",
+        "skillLevel": "85% realism factor",
+        "progressWidth": "85%",
+        "techTags": ["HBO", "FX", "Compositing"]
+      }
+    ]
+  },
+  "cta": {
+    "heading": ">>> Execute.NextStep()",
+    "buttons": [
+      {
+        "text": "Development & PM",
+        "link": "/development"
+      },
+      {
+        "text": "IT Operations",
+        "link": "/itops" 
+      },
+      {
+        "text": "Creative Work",
+        "link": "/creative"
+      }
+    ]
+  }
+}

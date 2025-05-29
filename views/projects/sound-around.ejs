@@ -1,0 +1,94 @@
+<div class="project-header">
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="/development">Development & PM</a> > <%= project.title %>
+        </nav>
+        <h1><%= project.title %></h1>
+        <p class="project-subtitle"><%= project.subtitle %></p>
+    </div>
+</div>
+
+<div class="container">
+    <section class="project-overview">
+        <div class="content-tier-primary">
+            <h2>Project Overview</h2>
+            <div class="content-block">
+                <p class="lead-text"><%= project.overview.description %></p>
+            </div>
+        </div>
+        
+        <div class="content-tier-secondary">
+            <div class="project-status-bar">
+                <% project.overview.statusItems.forEach(item => { %>
+                    <div class="status-item">
+                        <span class="status-label"><%= item.label %></span>
+                        <span class="status-value<%= item.statusClass ? ' ' + item.statusClass : '' %>"><%= item.value %></span>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+    </section>
+                    <span class="status-value">1000+</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Monitoring</span>
+                    <span class="status-value">24/7</span>
+                </div>
+            </div>
+        </div>
+    </section>    <section class="project-details">
+        <div class="content-tier-primary">
+            <h2><%= project.details.title %></h2>
+        </div>
+        
+        <div class="details-grid">
+            <% project.details.sections.forEach(section => { %>
+                <div class="detail-card will-change-transform">
+                    <div class="detail-header">
+                        <span class="detail-icon"><%= section.icon %></span>
+                        <h3><%= section.title %></h3>
+                    </div>
+                    <ul>
+                        <% section.items.forEach(item => { %>
+                            <li><%= item %></li>
+                        <% }); %>
+                    </ul>
+                    <% if (section.techStack && section.techStack.length > 0) { %>
+                        <div class="tech-stack">
+                            <% section.techStack.forEach(tech => { %>
+                                <span class="tech-tag"><%= tech %></span>
+                            <% }); %>
+                        </div>
+                    <% } %>
+                    <% if (section.metrics && section.metrics.length > 0) { %>
+                        <div class="<%= section.metricsClass || 'feature-metrics' %>">
+                            <% section.metrics.forEach(metric => { %>
+                                <div class="<%= section.metricClass || 'metric-small' %>">
+                                    <span class="metric-value"><%= metric.value %></span>
+                                    <span class="metric-label"><%= metric.label %></span>
+                                </div>
+                            <% }); %>
+                        </div>
+                    <% } %>
+                </div>
+            <% }); %>
+        </div>
+    </section>
+
+    <section class="project-challenges">
+        <h2><%= project.challenges.title %></h2>
+        <% project.challenges.items.forEach(challenge => { %>
+            <div class="challenge-item">
+                <h3><%= challenge.title %></h3>
+                <p><%= challenge.description %></p>
+            </div>
+        <% }); %>
+    </section>
+
+    <div class="project-navigation">
+        <a href="<%= project.navigation.back.link %>" class="back-button"><%= project.navigation.back.text %></a>
+        <% if (project.navigation.next) { %>
+            <a href="<%= project.navigation.next.link %>" class="next-button"><%= project.navigation.next.text %></a>
+        <% } %>
+    </div>
+</div>

@@ -1,0 +1,97 @@
+<div class="hero-section">
+    <div class="hero-content">
+        <h1 class="gradient-text floating-element"><%= content.hero.title %></h1>
+        <p class="hero-subtitle"><%= content.hero.subtitle %></p>
+        <div class="hero-buttons">
+            <% content.hero.buttons.forEach(button => { %>
+                <a href="<%= button.link %>" class="cta-button focus-ring"><%= button.text %></a>
+            <% }); %>
+        </div>
+    </div>
+</div>
+
+<div class="container">    <section class="intro-section">
+        <div class="content-tier-primary">
+            <h2><%= content.intro.title %></h2>
+            <div class="content-block">
+                <p class="lead-text"><%= content.intro.leadText %></p>
+            </div>
+        </div>
+        
+        <div class="content-tier-secondary">
+            <div class="insight-block">
+                <p><%= content.intro.insightText %></p>
+            </div>
+        </div>
+    </section>    <section class="experience-section">
+        <div class="content-tier-primary">
+            <h2><%= content.experience.title %></h2>
+            <div class="content-block">
+                <p class="lead-text"><%= content.experience.leadText %></p>
+            </div>
+        </div>
+        
+        <div class="content-tier-secondary">
+            <div class="experience-grid">
+                <% content.experience.items.forEach(item => { %>
+                    <div class="experience-item">
+                        <span class="code-tag">&lt;<%= item.category %>&gt;</span>
+                        <p><%= item.description %></p>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+        
+        <div class="content-tier-tertiary">
+            <div class="insight-block">
+                <p><%= content.experience.insightText %></p>
+            </div>
+        </div>
+    </section>    <section class="capabilities-section" id="capabilities">
+        <div class="content-tier-primary">
+            <h2 class="text-center text-shadow"><%= content.capabilities.title %></h2>
+        </div>
+        
+        <div class="capabilities-grid">
+            <% content.capabilities.items.forEach(capability => { %>
+                <div class="capability-card will-change-transform">
+                    <div class="capability-header">
+                        <span class="capability-icon"><%= capability.icon %></span>
+                        <h3><%= capability.title %></h3>
+                    </div>
+                    <p><%= capability.description %></p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: <%= capability.skillLevel %>%"></div>
+                        <span class="skill-level"><%= capability.skillLabel %></span>
+                    </div>
+                    <% if (capability.techStack && capability.techStack.length > 0) { %>
+                        <div class="tech-stack">
+                            <% capability.techStack.forEach(tech => { %>
+                                <span class="tech-tag"><%= tech %></span>
+                            <% }); %>
+                        </div>
+                    <% } %>
+                    <% if (capability.metrics && capability.metrics.length > 0) { %>
+                        <div class="pm-metrics">
+                            <% capability.metrics.forEach(metric => { %>
+                                <div class="metric">
+                                    <span class="metric-value"><%= metric.value %></span>
+                                    <span class="metric-label"><%= metric.label %></span>
+                                </div>
+                            <% }); %>
+                        </div>
+                    <% } %>
+                </div>
+            <% }); %>
+        </div>
+    </section>    <section class="cta-section">
+        <div class="content-tier-primary">
+            <h2><%= content.cta.title %></h2>
+        </div>
+        <div class="work-buttons">
+            <% content.cta.buttons.forEach(button => { %>
+                <a href="<%= button.link %>" class="work-button"><%= button.text %></a>
+            <% }); %>
+        </div>
+    </section>
+</div>

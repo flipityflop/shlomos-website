@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shlomo Friedman - Product Builder & Technical Leader. Expert in development, project management, IT operations, and creative production.">
+    <meta name="keywords" content="Product Manager, Software Development, IT Operations, Technical Leadership, VFX, Creative Production">
+    <meta name="author" content="Shlomo Friedman">
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:description" content="Product Builder & Technical Leader specializing in development, IT operations, and creative work">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="<%= title %>">
+    <meta name="twitter:description" content="Product Builder & Technical Leader">    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Shlomo Friedman</h1>
+                <p>Product Builder & Technical Leader</p>
+            </div>
+            <div class="nav-tabs">
+                <a href="/" class="nav-tab <%= activeTab === 'home' ? 'active' : '' %>">Home</a>
+                <a href="/development" class="nav-tab <%= activeTab === 'development' ? 'active' : '' %>">Development & PM</a>
+                <a href="/itops" class="nav-tab <%= activeTab === 'itops' ? 'active' : '' %>">IT Ops</a>
+                <a href="/creative" class="nav-tab <%= activeTab === 'creative' ? 'active' : '' %>">Creative</a>
+            </div>
+        </div>
+    </nav>    <main class="main-content">
+        <%- body %>
+    </main>    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About This Site</h3>
+                <p>I built this site myself, with help from Claude (Copilot in VS Code). It's running in my closet, on a TrueNAS SCALE. It's powered by Node.js, and running behind Cloudflare CDN and bot protection.</p>
+                <p class="footer-note">If you hack my server, you can see my wedding photos and my collection of movies.</p>
+                <div class="footer-tech-stack">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">TrueNAS SCALE</span>
+                    <span class="tech-tag">Cloudflare</span>
+                    <span class="tech-tag">EJS</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

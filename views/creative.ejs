@@ -1,0 +1,87 @@
+<div class="page-header">
+    <div class="container">
+        <h1><%= pageContent.header.title %></h1>
+        <p><%= pageContent.header.subtitle %></p>
+    </div>
+</div>
+
+<div class="container">
+    <section class="creative-overview">
+        <div class="content-tier-primary">
+            <h2><%= pageContent.overview.heading %></h2>
+            <div class="content-block">
+                <p class="lead-text">I can make someone look like they got shot - and I've worked on real TV shows for HBO and FX, bringing technical creativity to visual storytelling.</p>
+            </div>
+        </div>
+        
+        <div class="content-tier-secondary">
+            <div class="insight-block">
+                <p>The magic happens when technical expertise enhances storytelling - creating believable worlds that captivate audiences.</p>
+            </div>
+        </div>
+    </section>    <section class="tv-experience">
+        <div class="content-tier-primary">
+            <h2>TV Production Credits</h2>
+        </div>
+        
+        <div class="experience-grid">
+            <% pageContent.experience.forEach(exp => { %>
+            <div class="experience-card will-change-transform">
+                <div class="network-badge <%= exp.networkClass %>"><%= exp.network %></div>
+                <h3><%= exp.title %></h3>
+                <p><%= exp.description %></p>
+                <div class="production-metrics">
+                    <% exp.metrics.forEach(metric => { %>
+                    <div class="metric-small">
+                        <span class="metric-value"><%= metric.value %></span>
+                        <span class="metric-label"><%= metric.label %></span>
+                    </div>
+                    <% }); %>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+    </section>    <section class="vfx-capabilities">
+        <div class="content-tier-primary">
+            <h2>>>> VFX.GetCapabilities()</h2>
+        </div>
+        
+        <div class="capabilities-list">
+            <% pageContent.capabilities.forEach(cap => { %>
+            <div class="capability-item will-change-transform">
+                <div class="capability-header">
+                    <span class="capability-icon"><%= cap.icon %></span>
+                    <h3><%= cap.title %></h3>
+                </div>
+                <p><%= cap.description %></p>
+                <% if (cap.techTags) { %>
+                <div class="tech-stack">
+                    <% cap.techTags.forEach(tag => { %>
+                    <span class="tech-tag"><%= tag %></span>
+                    <% }); %>
+                </div>
+                <% } %>
+                <% if (cap.workflow) { %>
+                <div class="problem-solving-flow">
+                    <span class="flow-step"><%= cap.workflow %></span>
+                </div>
+                <% } %>
+                <% if (cap.stages) { %>
+                <div class="workflow-stages">
+                    <% cap.stages.forEach(stage => { %>
+                    <span class="stage-tag"><%= stage %></span>
+                    <% }); %>
+                </div>
+                <% } %>
+            </div>
+            <% }); %>
+        </div>
+    </section>
+
+    <section class="portfolio-link">
+        <h2><%= pageContent.portfolio.heading %></h2>
+        <p><%= pageContent.portfolio.description %></p>
+        <a href="<%= pageContent.portfolio.link %>" target="_blank" class="portfolio-button"><%= pageContent.portfolio.linkText %></a>
+        <p class="portfolio-note"><%= pageContent.portfolio.note %></p>
+    </section>
+</div>

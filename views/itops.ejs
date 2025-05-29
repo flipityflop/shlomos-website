@@ -1,0 +1,108 @@
+<div class="page-header">
+    <div class="container">
+        <h1><%= pageContent.header.title %></h1>
+        <p><%= pageContent.header.subtitle %></p>
+    </div>
+</div>
+
+<div class="container">
+    <section class="itops-overview">
+        <div class="content-tier-primary">
+            <h2><%= pageContent.overview.title %></h2>
+            <div class="content-block">
+                <p class="lead-text"><%= pageContent.overview.leadText %></p>
+            </div>
+        </div>
+        
+        <div class="content-tier-secondary">
+            <div class="insight-block">
+                <p><%= pageContent.overview.insightText %></p>
+            </div>
+        </div>
+    </section>    <section class="itops-skills">
+        <div class="content-tier-primary">
+            <h2><%= pageContent.skills.title %></h2>
+        </div>
+        
+        <div class="skills-grid">
+            <% pageContent.skills.items.forEach(skill => { %>
+                <div class="skill-card will-change-transform">
+                    <div class="skill-header">
+                        <span class="skill-icon"><%= skill.icon %></span>
+                        <h3><%= skill.title %></h3>
+                    </div>
+                    <p><%= skill.description %></p>
+                    <% if (skill.metrics && skill.metrics.length > 0) { %>
+                        <div class="skill-metrics">
+                            <% skill.metrics.forEach(metric => { %>
+                                <div class="metric-small">
+                                    <span class="metric-value"><%= metric.value %></span>
+                                    <span class="metric-label"><%= metric.label %></span>
+                                </div>
+                            <% }); %>
+                        </div>
+                    <% } %>
+                    <% if (skill.techStack && skill.techStack.length > 0) { %>
+                        <div class="tech-stack">
+                            <% skill.techStack.forEach(tech => { %>
+                                <span class="tech-tag"><%= tech %></span>
+                            <% }); %>
+                        </div>
+                    <% } %>
+                    <% if (skill.timeline) { %>
+                        <div class="deployment-timeline">
+                            <span class="timeline-step"><%= skill.timeline %></span>
+                        </div>
+                    <% } %>
+                    <% if (skill.protocols && skill.protocols.length > 0) { %>
+                        <div class="protocol-list">
+                            <% skill.protocols.forEach(protocol => { %>
+                                <span class="protocol-tag"><%= protocol %></span>
+                            <% }); %>
+                        </div>
+                    <% } %>
+                    <% if (skill.vendors && skill.vendors.length > 0) { %>
+                        <div class="vendor-badges">
+                            <% skill.vendors.forEach(vendor => { %>
+                                <span class="vendor-tag"><%= vendor %></span>
+                            <% }); %>
+                        </div>
+                    <% } %>
+                    <% if (skill.serverStatus) { %>
+                        <div class="server-status">
+                            <div class="status-indicator <%= skill.serverStatus.statusClass %>"><%= skill.serverStatus.status %></div>
+                            <span class="uptime-display"><%= skill.serverStatus.uptime %></span>
+                        </div>
+                    <% } %>
+                </div>
+            <% }); %>
+        </div>
+    </section>    <section class="infrastructure-note">
+        <div class="content-tier-primary">
+            <h2><%= pageContent.infrastructure.title %></h2>
+            <div class="content-block">
+                <p class="lead-text"><%= pageContent.infrastructure.leadText %></p>
+            </div>
+        </div>
+        
+        <div class="content-tier-secondary">
+            <div class="infrastructure-diagram">
+                <% pageContent.infrastructure.diagram.forEach((component, index) => { %>
+                    <div class="infra-component">
+                        <span class="component-name"><%= component.name %></span>
+                        <span class="component-tech"><%= component.tech %></span>
+                    </div>                    <% if (index < pageContent.infrastructure.diagram.length - 1) { %>
+                        <span class="arrow">→</span>
+                    <% } %>
+                <% }); %>
+            </div>
+        </div>
+        
+        <div class="content-tier-tertiary">
+            <div class="insight-block">
+                <span class="code-comment"><%= pageContent.infrastructure.codeComment %></span>
+                <p><%= pageContent.infrastructure.insightText %></p>
+            </div>
+        </div>
+    </section>
+</div>

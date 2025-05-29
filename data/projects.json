@@ -1,0 +1,205 @@
+{
+  "amazonFlywheel": {
+    "title": "Amazon Flywheel Dashboard",
+    "subtitle": "Sales Performance & Analytics Platform",
+    "description": "A comprehensive sales and performance dashboard built to track Amazon marketplace metrics and optimize product strategies. This platform provides real-time insights into sales performance, inventory management, and competitive analysis.",
+    "status": "DEPLOYED",
+    "statusLabel": "Status",
+    "metrics": {
+      "uptime": "99.9%",
+      "loadTime": "500ms",
+      "dailyUsers": "5000+",
+      "monitoring": "24/7"
+    },
+    "technologies": [
+      "Python for data processing",
+      "JavaScript frontend", 
+      "Amazon MWS API integration",
+      "Real-time data visualization",
+      "Cloud-based infrastructure"
+    ],
+    "techTags": ["Python", "JavaScript", "AWS MWS", "Real-time"],
+    "features": [
+      "Real-time sales tracking",
+      "Inventory management alerts", 
+      "Competitive analysis tools",
+      "Performance forecasting",
+      "Custom reporting dashboard"
+    ],
+    "featureMetrics": {
+      "coreModules": "5",
+      "realTimeData": "100%"
+    },
+    "impact": [
+      "40% improvement in inventory turnover",
+      "Real-time decision making capabilities", 
+      "Automated reporting workflows",
+      "Enhanced competitive positioning",
+      "Streamlined team collaboration"
+    ],
+    "impactMetrics": {
+      "inventoryImprovement": "40%",
+      "realTimeData": "100%"
+    },
+    "timeline": [
+      {
+        "date": "Q1 2024",
+        "event": "Initial deployment"
+      },
+      {
+        "date": "Q2 2024", 
+        "event": "Performance optimization"
+      }
+    ],
+    "challenges": [
+      {
+        "title": "Amazon API Rate Limiting",
+        "solution": "Implemented intelligent queuing and caching strategies to handle Amazon's strict API rate limits while maintaining real-time data freshness."
+      },
+      {
+        "title": "Data Volume & Performance", 
+        "solution": "Built efficient data processing pipelines to handle large volumes of marketplace data with sub-second response times."
+      },
+      {
+        "title": "Multi-marketplace Integration",
+        "solution": "Created a unified data model to handle variations across different Amazon marketplaces and regions."
+      }
+    ]
+  },
+  "soundAround": {
+    "title": "Sound Around Admin Portal",
+    "subtitle": "Audio Content Management & Distribution Platform", 
+    "description": "Internal administration portal for managing audio content distribution and user management across multiple platforms. This system handles content ingestion, processing, distribution, and analytics for a large-scale audio platform.",
+    "status": "OPERATIONAL",
+    "statusLabel": "Status",
+    "metrics": {
+      "dailyUsers": "1000+",
+      "monitoring": "24/7",
+      "uptime": "99.9%"
+    },
+    "technologies": [
+      "Node.js backend services",
+      "React.js admin interface",
+      "Audio processing pipelines", 
+      "RESTful API architecture",
+      "Database optimization"
+    ],
+    "techTags": ["Node.js", "React.js", "Audio API", "REST"],
+    "features": [
+      "Content upload & processing",
+      "User role management",
+      "Distribution scheduling", 
+      "Analytics dashboard",
+      "Automated quality control"
+    ],
+    "featureMetrics": {
+      "coreModules": "5",
+      "qcPipeline": "Auto"
+    },
+    "impact": [
+      "75% reduction in manual processing time",
+      "Streamlined content workflows",
+      "Improved content quality control",
+      "Enhanced user management", 
+      "Real-time performance monitoring"
+    ],
+    "impactMetrics": {
+      "timeReduction": "75%",
+      "realTimeMonitoring": "Real-time"
+    },
+    "timeline": [
+      {
+        "date": "Q3 2023",
+        "event": "MVP launch"
+      },
+      {
+        "date": "Q1 2024",
+        "event": "User management module"
+      }
+    ],
+    "challenges": [
+      {
+        "title": "Audio Processing at Scale",
+        "solution": "Developed efficient audio processing pipelines that handle multiple formats and quality levels while maintaining processing speed and audio fidelity."
+      },
+      {
+        "title": "Multi-Platform Distribution",
+        "solution": "Created a flexible distribution system that adapts content for different platforms while maintaining metadata consistency."
+      },
+      {
+        "title": "User Permission Complexity", 
+        "solution": "Implemented a granular role-based permission system that handles complex organizational hierarchies and content access controls."
+      }
+    ]
+  },
+  "serenelife": {
+    "title": "SereneLife App",
+    "subtitle": "OEM Smart Home Control & Automation Platform",
+    "description": "OEM Smart home application for controlling and monitoring connected devices with custom automation workflows. Built from the ground up to provide seamless integration between various smart home devices and intuitive user control interfaces.",
+    "status": "ACTIVE DEV", 
+    "statusLabel": "Status",
+    "metrics": {
+      "devices": "50+",
+      "automation": "Real-time",
+      "deviceTypes": "15+"
+    },
+    "technologies": [
+      "React Native mobile app",
+      "IoT device integration",
+      "Cloud messaging protocols",
+      "Real-time synchronization",
+      "Custom automation engine"
+    ],
+    "techTags": ["React Native", "IoT", "Cloud", "Real-time"],
+    "features": [
+      "Multi-device control interface",
+      "Custom automation workflows", 
+      "Real-time device monitoring",
+      "Voice control integration",
+      "Energy usage analytics"
+    ],
+    "featureMetrics": {
+      "coreFeatures": "5",
+      "automationRules": "∞"
+    },
+    "impact": [
+      "60% increase in user engagement",
+      "Seamless device onboarding",
+      "Reduced support ticket volume",
+      "Enhanced automation capabilities",
+      "Improved energy efficiency"
+    ],
+    "impactMetrics": {
+      "userEngagement": "60%",
+      "supportTickets": "-30%"
+    },
+    "timeline": [
+      {
+        "date": "Q2 2024",
+        "event": "Core features"
+      },
+      {
+        "date": "Q4 2024", 
+        "event": "Automation engine"
+      }
+    ],
+    "challenges": [
+      {
+        "title": "Device Compatibility",
+        "solution": "Created a universal device communication layer that handles multiple protocols and manufacturer variations while maintaining consistent user experience."
+      },
+      {
+        "title": "Real-Time Synchronization",
+        "solution": "Implemented efficient real-time communication between devices and mobile app, ensuring instant status updates and control responsiveness."
+      },
+      {
+        "title": "Custom Automation Logic",
+        "solution": "Built a flexible automation engine that allows users to create complex workflows without programming knowledge, while providing advanced options for power users."
+      }
+    ],
+    "oemPartnership": {
+      "title": "OEM Partnership Success",
+      "description": "This project was delivered as a white-label solution for a major smart home device manufacturer, demonstrating the ability to build scalable, enterprise-ready applications that serve as the foundation for other companies' products."
+    }
+  }
+}

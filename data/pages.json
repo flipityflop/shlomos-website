@@ -1,0 +1,272 @@
+{
+  "development": {
+    "header": {
+      "title": "Development & Project Management",
+      "subtitle": "Technical products with unique and creative solutions"
+    },
+    "recentProjects": {
+      "heading": "Recent Projects",
+      "projects": [
+        {
+          "key": "amazonFlywheel",
+          "title": "Amazon Flywheel Dashboard",
+          "description": "A comprehensive sales and performance dashboard built to track Amazon marketplace metrics and optimize product strategies.",
+          "status": "DEPLOYED",
+          "statusClass": "status-completed",
+          "timeline": [
+            {
+              "date": "Q1 2024",
+              "event": "Initial deployment"
+            },
+            {
+              "date": "Q2 2024",
+              "event": "Performance optimization"
+            }
+          ],
+          "metrics": [
+            {
+              "value": "99.9%",
+              "label": "Uptime"
+            },
+            {
+              "value": "500ms", 
+              "label": "Load time"
+            }
+          ],
+          "link": "/project/amazon-flywheel",
+          "linkText": "View Details"
+        },
+        {
+          "key": "soundAround",
+          "title": "Sound Around Admin Portal",
+          "description": "Internal administration portal for managing audio content distribution and user management across multiple platforms.",
+          "status": "OPERATIONAL",
+          "statusClass": "status-completed",
+          "timeline": [
+            {
+              "date": "Q3 2023",
+              "event": "MVP launch"
+            },
+            {
+              "date": "Q1 2024",
+              "event": "User management module"
+            }
+          ],
+          "metrics": [
+            {
+              "value": "1000+",
+              "label": "Daily users"
+            },
+            {
+              "value": "24/7",
+              "label": "Monitoring"
+            }
+          ],
+          "link": "/project/sound-around",
+          "linkText": "Access Terminal"
+        },
+        {
+          "key": "serenelife",
+          "title": "SereneLife App",
+          "description": "OEM Smart home application for controlling and monitoring connected devices with custom automation workflows.",
+          "status": "ACTIVE DEV",
+          "statusClass": "status-ongoing",
+          "timeline": [
+            {
+              "date": "Q2 2024",
+              "event": "Core features"
+            },
+            {
+              "date": "Q4 2024",
+              "event": "Automation engine"
+            }
+          ],
+          "metrics": [
+            {
+              "value": "15+",
+              "label": "Device types"
+            },
+            {
+              "value": "Real-time",
+              "label": "Updates"
+            }
+          ],
+          "link": "/project/serenelife",
+          "linkText": "Access Terminal"
+        }
+      ]
+    },
+    "approach": {
+      "heading": "My Development Approach",
+      "items": [
+        {
+          "title": "Technical Excellence",
+          "description": "From crazy cloud configurations to custom Python workflows for DevOps data processing."
+        },
+        {
+          "title": "Product Focus",
+          "description": "Building excellent products that help teams succeed and solve real problems."
+        },
+        {
+          "title": "Data-Driven", 
+          "description": "Bringing data to teams that had none - lead time, task types, and automation magic."
+        }
+      ]
+    }
+  },
+  "itops": {
+    "header": {
+      "title": "IT Operations & Infrastructure",
+      "subtitle": "Infrastructure, systems, and keeping everything running smoothly"
+    },
+    "overview": {
+      "heading": "System Operations",
+      "description": "From helpdesk management to enterprise infrastructure, I've built and maintained systems that keep teams productive and secure.",
+      "insight": "The magic happens when systems just work - seamless infrastructure that enables teams to focus on what they do best."
+    },
+    "skills": [
+      {
+        "icon": "🎫",
+        "title": "Helpdesk Management",
+        "description": "Managing support tickets, user training, and maintaining high customer satisfaction across diverse technical environments.",
+        "metrics": [
+          {
+            "value": "98%",
+            "label": "Satisfaction rate"
+          },
+          {
+            "value": "<2h",
+            "label": "Avg response"
+          }
+        ]
+      },
+      {
+        "icon": "🌐", 
+        "title": "Network Infrastructure",
+        "description": "Network setup, configuration, and maintenance including routing, switching, and security protocols.",
+        "techTags": ["TCP/IP", "VLAN", "Firewall"]
+      },
+      {
+        "icon": "🗄️",
+        "title": "Storage Systems",
+        "description": "Standing up NAS systems, configuring network storage, and ensuring reliable data access and backup solutions.",
+        "techTags": ["TrueNAS SCALE", "Cloudflare", "Docker"]
+      },
+      {
+        "icon": "💻",
+        "title": "Computer Setup & Management", 
+        "description": "End-to-end computer setup, configuration, and maintenance for teams and individual users.",
+        "timeline": "Imaging → Config → Deploy → Monitor"
+      },
+      {
+        "icon": "📞",
+        "title": "Telecommunications",
+        "description": "SIP trunking and DID routing configuration for business communication systems.",
+        "protocolTags": ["SIP", "DID", "VoIP"]
+      },
+      {
+        "icon": "🛒",
+        "title": "Hardware Procurement",
+        "description": "Strategic hardware purchasing and vendor management - including buying wireless mice from B&H (and everything else too).",
+        "vendorTags": ["B&H", "Dell", "HPE"]
+      },
+      {
+        "icon": "🖥️",
+        "title": "Server Management",
+        "description": "Server installation, configuration, and maintenance including this very site running on TrueNAS SCALE in my closet.",
+        "status": "ONLINE",
+        "uptime": "99.9% uptime"
+      }
+    ],
+    "infrastructure": {
+      "heading": ">>> Runtime.GetCurrentInfrastructure()",
+      "description": "This website is a perfect example of my IT operations work - it's running on a TrueNAS SCALE server in my home lab, powered by Node.js, and protected by Cloudflare CDN and bot protection.",
+      "diagram": [
+        {
+          "name": "Frontend",
+          "tech": "Node.js + Express"
+        },
+        {
+          "name": "CDN",
+          "tech": "Cloudflare"
+        },
+        {
+          "name": "Server",
+          "tech": "TrueNAS SCALE"
+        }
+      ],
+      "insight": "Complete end-to-end solution design, implementation, and maintenance - From concept to production - designed, implemented, and maintained entirely in-house."
+    }
+  },
+  "creative": {
+    "header": {
+      "title": "Creative Work & VFX",
+      "subtitle": "Visual effects and creative problem-solving"
+    },
+    "overview": {
+      "heading": "Visual Effects Experience",
+      "description": "Professional VFX work contributing to television and film productions, with experience working alongside industry professionals in high-pressure, deadline-driven environments."
+    },
+    "experience": [
+      {
+        "network": "HBO",
+        "networkClass": "hbo",
+        "title": "HBO Productions",
+        "description": "Contributed to high-profile HBO television productions, working with industry-standard tools and workflows.",
+        "metrics": [
+          {
+            "value": "Premium",
+            "label": "Quality standard"
+          },
+          {
+            "value": "24fps",
+            "label": "Broadcast spec"
+          }
+        ]
+      },
+      {
+        "network": "FX",
+        "networkClass": "fx", 
+        "title": "FX Network",
+        "description": "Collaborated on FX network shows, delivering visual effects that enhance storytelling and viewer experience.",
+        "metrics": [
+          {
+            "value": "Seamless",
+            "label": "Integration"
+          },
+          {
+            "value": "Real-time",
+            "label": "Collaboration"
+          }
+        ]
+      }
+    ],
+    "capabilities": [
+      {
+        "icon": "🎬",
+        "title": "Compositing & Effects",
+        "description": "Creating realistic visual effects including injury simulation, environmental effects, and seamless compositing.",
+        "techTags": ["After Effects", "Photoshop", "Nuke", "Maya"]
+      },
+      {
+        "icon": "⚙️",
+        "title": "Technical Problem Solving",
+        "description": "Combining creative vision with technical expertise to solve complex visual challenges in post-production.",
+        "workflow": "Analyze → Design → Execute → Refine"
+      },
+      {
+        "icon": "🎯",
+        "title": "Production Workflows",
+        "description": "Understanding of professional production pipelines and collaboration with directors, producers, and other creative professionals.",
+        "stages": ["Pre-vis", "Production", "Post", "Delivery"]
+      }
+    ],
+    "portfolio": {
+      "heading": "View My Creative Portfolio",
+      "description": "For a complete showcase of my creative work, including VFX reels and production credits:",
+      "link": "https://crevado.com",
+      "linkText": "Visit My Crevado Portfolio",
+      "note": "*External link to professional portfolio platform"
+    }
+  }
+}
